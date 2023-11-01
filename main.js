@@ -66,10 +66,10 @@ class Gerente extends Empleado{
         this._empleadosCargo = empleadosCargo;
     }
     get departamento(){
-        return `departamento: ${this._departamento}`;
+        return `Departamento: ${this._departamento}`;
     }
     get empleadosCargo(){
-        return `empleados a cargo: ${this._empleadosCargo}`;
+        return `Empleados a cargo: ${this._empleadosCargo}`;
     }
 }
 
@@ -80,10 +80,10 @@ class Desarrollador extends Empleado{
         this._proyectosAsignados = proyectosAsignados;
     }
     get lenguaje(){
-        return `lenguaje: ${this._lenguaje}`;
+        return `Lenguaje: ${this._lenguaje}`;
     }
     get proyectosAsignados(){
-        return `proyectos asignados: ${this._proyectosAsignados}`;
+        return `Proyectos asignados: ${this._proyectosAsignados}`;
     }
 }
 
