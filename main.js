@@ -144,9 +144,9 @@ while(numAleatorio != valorusuario){
     if( numAleatorio === valorusuario){
         console.log('Felicidades, has adivinado!');
     }else if(valorusuario > numAleatorio){
-        console.log('el numero que estás buscando es menor');
+        console.log('El numero que estás buscando es menor');
     }else if(valorusuario < numAleatorio){
-        console.log('el numero que estás buscando es mayor');
+        console.log('El numero que estás buscando es mayor');
     }else{
         console.log('Ingresa un numero valido');
     }
