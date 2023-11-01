@@ -1,4 +1,3 @@
-console.log('hola');
 /*------ EJERCICIOS A REALIZAR EN GRUPO (EN CLASE)
 
 1) Imagina que estas desarrollando un sistema de gestión de empleados para una empresa,
