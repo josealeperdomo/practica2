@@ -141,9 +141,12 @@ let valorusuario;
 
 while(numAleatorio != valorusuario){
     valorusuario = parseInt(prompt('adivine el numero'))
-    console.log(valorusuario);
     if( numAleatorio == valorusuario){
         console.log('Felicidades, has adivinado!');
+    }else if(valorusuario > numAleatorio){
+        console.log('el numero que estás buscando es menor');
+    }else if(valorusuario < numAleatorio){
+        console.log('el numero que estás buscando es mayor');
     }else{
         console.log('No acertaste el numero');
     }
