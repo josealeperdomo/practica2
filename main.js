@@ -49,7 +49,7 @@ class Empleado{
         this._salario = salario;
     }
     get nombre(){
-        return `Empleado: ${this._nombre}`;
+        return `Nombre: ${this._nombre}`;
     }
     get edad(){
         return `Edad: ${this._edad}`;
@@ -60,7 +60,7 @@ class Empleado{
 }
 
 class Gerente extends Empleado{
-    constructor(nombre, edad, salario, departamento,empleadosCargo){
+    constructor(nombre,edad,salario,departamento,empleadosCargo){
         super(nombre, edad, salario);
         this._departamento = departamento;
         this._empleadosCargo = empleadosCargo;
@@ -74,7 +74,7 @@ class Gerente extends Empleado{
 }
 
 class Desarrollador extends Empleado{
-    constructor(nombre, edad, salario,lenguaje,proyectosAsignados){
+    constructor(nombre,edad,salario,lenguaje,proyectosAsignados){
         super(nombre,edad,salario);
         this._lenguaje = lenguaje;
         this._proyectosAsignados = proyectosAsignados;
@@ -87,9 +87,9 @@ class Desarrollador extends Empleado{
     }
 }
 
-let empleado1 = new Empleado('pedro','52','80$');
-let empleado2 = new Empleado('Maria','28','80$');
-let empleado3 = new Empleado('Juan','39','80$');
+let empleado1 = new Empleado('Pedro',52,'80$');
+let empleado2 = new Empleado('Maria',28,'80$');
+let empleado3 = new Empleado('Juan',39,'80$');
 console.log(empleado1);
 console.log(empleado2);
 console.log(empleado3);
@@ -97,18 +97,19 @@ console.log(empleado1.edad);
 console.log(empleado2.nombre);
 console.log(empleado3.salario);
 
-let gerente1 = new Gerente('pepe','36','1000$','Informática',3);
-let gerente2 = new Gerente('jose','30','2000$', 'contabilidad', 2);
-let gerente3 = new Gerente('maria','30','1500$','marketing',3);
+let gerente1 = new Gerente('Pepe',36,'1000$','Informática',3);
+let gerente2 = new Gerente('Jose',30,'2000$', 'contabilidad', 2);
+let gerente3 = new Gerente('Luisa',30,'1500$','marketing',3);
 console.log(gerente1);
 console.log(gerente2);
 console.log(gerente3);
 console.log(gerente1.departamento);
 console.log(gerente2.empleadosCargo);
+console.log(gerente3.nombre);
 
-let desarrollador1 = new Desarrollador('luis','39','2000$','Js','Programa informacion');
-let desarrollador2 = new Desarrollador('juana','30','2000$','Js','Programa informacion');
-let desarrollador3 = new Desarrollador('marcos','28','2000$','Js','Programa informacion');
+let desarrollador1 = new Desarrollador('Luis',39,'2000$','Js','Programa informacion');
+let desarrollador2 = new Desarrollador('Juana',30,'2000$','Js','Programa informacion');
+let desarrollador3 = new Desarrollador('Marcos',28,'2000$','Js','Programa informacion');
 console.log(desarrollador1);
 console.log(desarrollador2);
 console.log(desarrollador3);
@@ -135,19 +136,18 @@ multiplicar(parseInt(prompt('ingresa un numero')))
 */
 
 let numAleatorio = Math.floor(Math.random()*100) + 1
-console.log(numAleatorio);
 
 let valorusuario;
 
 while(numAleatorio != valorusuario){
     valorusuario = parseInt(prompt('adivine el numero'))
-    if( numAleatorio == valorusuario){
+    if( numAleatorio === valorusuario){
         console.log('Felicidades, has adivinado!');
     }else if(valorusuario > numAleatorio){
         console.log('el numero que estás buscando es menor');
     }else if(valorusuario < numAleatorio){
         console.log('el numero que estás buscando es mayor');
     }else{
-        console.log('No acertaste el numero');
+        console.log('Ingresa un numero valido');
     }
 }
